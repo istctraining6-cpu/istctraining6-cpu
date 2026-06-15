@@ -81,6 +81,12 @@ img { display: block; max-width: 100%; }
   position: sticky; top: 0; background: var(--bg); z-index: 10;
 }
 .brandmark { display: flex; align-items: center; gap: 10px; }
+.brandmark-img {
+  width: 44px; height: 44px; border-radius: 999px;
+  object-fit: cover; object-position: center 42%;
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
 .brandmark-logo {
   width: 38px; height: 38px; border-radius: 8px;
   background: var(--primary); color: var(--primary-ink);
@@ -388,6 +394,29 @@ img { display: block; max-width: 100%; }
   font-size: 28px; color: var(--ink); margin-bottom: 8px;
 }
 .form-success-sub { color: var(--sub); font-size: 15px; }
+
+/* ---- Call card (admission) ---- */
+.call-card { display: flex; flex-direction: column; gap: 12px; }
+.call-card-title {
+  font-family: 'Fraunces', 'Noto Serif Devanagari', Georgia, serif;
+  font-size: 30px; font-weight: 500; color: var(--ink);
+  letter-spacing: -0.6px; line-height: 1.15; margin-top: 4px;
+}
+.call-card-sub { font-size: 15px; color: var(--sub); line-height: 1.55; margin-bottom: 8px; }
+.call-card-actions { display: grid; gap: 10px; }
+.call-btn {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 18px; border-radius: 10px;
+  text-decoration: none; transition: transform 0.15s ease;
+}
+.call-btn:hover { transform: translateY(-1px); opacity: 1; }
+.call-btn-icon { font-size: 22px; flex-shrink: 0; }
+.call-btn-label { display: block; font-size: 12px; opacity: 0.85; letter-spacing: 0.3px; }
+.call-btn-num { display: block; font-size: 18px; font-weight: 700; letter-spacing: 0.2px; white-space: nowrap; }
+.call-btn-primary { background: var(--primary); color: var(--primary-ink); }
+.call-btn-wa { background: #1FA855; color: #FFFFFF; }
+.call-btn-ghost { background: var(--bg); color: var(--ink); border: 1px solid var(--line); }
+.call-btn-ghost .call-btn-num { font-size: 16px; }
 
 /* ---- Footer ---- */
 .footer { padding: 48px 56px; background: var(--bg); }

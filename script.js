@@ -214,6 +214,7 @@ function applyPalette(key) {
 function setupTweaks() {
   const toggle = document.getElementById("tweaks-toggle");
   const panel = document.getElementById("tweaks-panel");
+  if (!toggle || !panel) return;
   toggle.addEventListener("click", () => panel.classList.toggle("is-open"));
 
   panel.querySelectorAll("[data-palette-val]").forEach(b => {
@@ -231,7 +232,7 @@ function setupTweaks() {
     });
   });
 
-  // Restore saved
+  // Restore saved palette/headline preference (even without panel)
   const savedPalette = localStorage.getItem("istc-palette");
   if (savedPalette) {
     applyPalette(savedPalette);
