@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://istccomputercentre.in/sitemap.xml
+Sitemap: https://istchisar.in/sitemap.xml

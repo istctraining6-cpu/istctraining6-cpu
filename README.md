@@ -11,19 +11,11 @@ Plain HTML/CSS/JS. Koi build step nahi. Bas `deploy/` folder kisi bhi hosting pa
 
 ---
 
-## STEP 1 — Apna domain set karo (ZAROORI for SEO)
+## STEP 1 — Domain (✅ ho gaya)
 
-Maine placeholder domain `https://istccomputercentre.in` use kiya hai. Jab tumhara
-asli domain mile, to in 4 files mein `istccomputercentre.in` ko apne domain se replace karo:
-
-1. `index.html`  (canonical, og:url, og:image, twitter:image, structured data ke andar)
-2. `robots.txt`
-3. `sitemap.xml`
-
-(Find & replace: `istccomputercentre.in` -> `yourdomain.com`)
-
-Agar abhi domain nahi hai to bhi website chalegi — bas Google par best ranking
-ke liye sahi domain hona chahiye.
+Domain set hai: **https://istchisar.in**
+Saari files (index.html, robots.txt, sitemap.xml) mein ye already laga hua hai.
+Kuch karne ki zaroorat nahi.
 
 ---
 
